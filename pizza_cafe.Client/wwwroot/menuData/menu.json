@@ -488,5 +488,125 @@
         "weight": 0,
         "count": 1,
         "typeOfDish": 4
+    },
+    {
+        "id": 50,
+        "name": "Піца Салямі (30см)",
+        "image": "image/Піца Салямі.png",
+        "description": "Ковбаса Салямі, Сир Mozzarella, Томатний Cоус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 51,
+        "name": "Болгарська Піца (30см)",
+        "image": "image/Болгарська Піца.png",
+        "description": "Болгарський перець, Балик, Бринза, Сир Mozzarella, Томатний Cоус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 52,
+        "name": "М'ясна Піца (30см)",
+        "image": "image/М'ясна Піца.png",
+        "description": "Балик, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 53,
+        "name": "Грибна Піца (30см)",
+        "image": "image/Грибна Піца.png",
+        "description": "Гриби Печериці, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 54,
+        "name": "Гавайська Піца (30см)",
+        "image": "image/Гавайська Піца.png",
+        "description": "Курка, Ананас, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 55,
+        "name": "Сирна Піца (30см)",
+        "image": "image/Сирна Піца.png",
+        "description": "Сир Dorblu, Сир Фета, Сир Пармезан, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 56,
+        "name": "Курка Гриби (30см)",
+        "image": "image/Курка Гриби.png",
+        "description": "Гриби Печериці, Курка, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 57,
+        "name": "Морська Піца (30см)",
+        "image": "image/Морська Піца.png",
+        "description": "Мідії, Креветки, Сніжний Краб, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 58,
+        "name": "Маргарита (30см)",
+        "image": "image/Маргарита.png",
+        "description": "Томати, Сир Mozzarella, Томатний Соус",
+        "price": 200,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 7
+    },
+    {
+        "id": 59,
+        "name": "Картопля по-селянськи",
+        "image": "image/Картопля по-селянськи.png",
+        "description": "",
+        "price": 81,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 5
+    },
+    {
+        "id": 60,
+        "name": "Картопля фрі",
+        "image": "image/Картопля фрі.png",
+        "description": "",
+        "price": 81,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 5
+    },
+    {
+        "id": 61,
+        "name": "Нагетси",
+        "image": "image/Нагетси.png",
+        "description": "",
+        "price": 97,
+        "weight": 0,
+        "count": 12,
+        "typeOfDish": 5
     }
 ]

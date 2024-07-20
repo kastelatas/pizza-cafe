@@ -20,6 +20,18 @@
     background: transparent;
 }
 
+.dish-Supplements {
+    border-radius: inherit;
+    overflow: inherit;
+}
+
+.dish-Supplements img {
+    width: inherit;
+    height: auto;
+    object-fit: inherit;
+    scale: 1.5;
+}
+
 @media (max-width: 1025px) {
     .card {
         flex-direction: column !important;

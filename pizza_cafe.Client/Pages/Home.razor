@@ -25,12 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav justify-content-between">
-                    <NavLink
-                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Піца", forceLoad: true))"
-                        href="javascript:void(0)"
-                        Match="@NavLinkMatch.Prefix">
-                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Піца</li>
-                    </NavLink>
+                  
                     <NavLink
                         @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Перші страви", forceLoad: true))"
                         href="javascript:void(0)"
@@ -55,6 +50,18 @@
                         Match="@NavLinkMatch.Prefix">
                         <li class=" nav-item  list-group-item cursor-pointer border-0 ">Хот Доги</li>
                     </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Піца", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Піца</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Добавки", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Добавки</li>
+                    </NavLink>
                 </ul>
             </div>
         </nav>
@@ -73,7 +80,7 @@
                     <br/>
                     <p class="letter-spacing-4 text-center text-uppercase fs-4" id="@item.Key">@item.Key</p>
                     <br/>
-                    <div class="menu-list__wrapper d-flex justify-content-center">
+                    <div class="menu-list__wrapper d-flex justify-content-center justify-content-sm-center">
                         <div class="d-flex flex-wrap flex-row justify-content-between">
                             @foreach (var dish in item.Value)
                             {
