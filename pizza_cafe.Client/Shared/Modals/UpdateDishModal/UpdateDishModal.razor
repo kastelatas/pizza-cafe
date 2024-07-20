@@ -1,0 +1,42 @@
+@using pizza_cafe.Shared.Models
+<Modal ShowModal="ShowModal" CloseModal="CloseUpdateDishModal">
+    <TitleContent>
+        Изменить Блюдо
+    </TitleContent>
+    <ChildContent>
+        @if (Dish != null)
+        {
+            <form>
+                <div class="mb-3">
+                    <label for="nameOfDish" class="form-label">Название</label>
+                    <input type="text" class="form-control" value="@Dish.Name" id="nameOfDish" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="descriptionOfDish" class="form-label">Описание</label>
+                    <textarea  class="form-control" id="descriptionOfDish">@Dish.Description</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="priceOfDish" class="form-label">Цена</label>
+                    <input class="form-control" value="@Dish.Price" id="priceOfDish"/>
+                </div>
+                <div class="mb-3">
+                    <label for="weightOfDish" class="form-label">Вес</label>
+                    <input class="form-control" value="@Dish.Weight" id="weightOfDish"/>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => CloseUpdateDishModal?.Invoke()">Закрыть</button>
+                </div>
+            </form>
+        }
+    </ChildContent>
+</Modal>
+
+@code {
+
+    [Parameter] public bool ShowModal { get; set; }
+    [Parameter] public Dish? Dish { get; set; }
+    [Parameter] public Action? CloseUpdateDishModal { get; set; }
+
+}

@@ -1,0 +1,36 @@
+
+.home-page {
+    height: max-content;
+}
+
+.main-title {
+    font-size: 120px;
+}
+
+.letter-spacing-4 {
+    letter-spacing: 4px;
+}
+
+.menu-list__wrapper {
+    max-width: 1166px;
+    margin: 0 auto;
+}
+
+.home-page .navbar {
+    background: #fff;
+}
+
+.home-page .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.home-page .navbar-nav {
+    width: 100%;
+    background: #fff;
+}
+
+@media (max-width: 1025px) {
+    .main-title {
+        font-size: 60px !important;
+    }
+}

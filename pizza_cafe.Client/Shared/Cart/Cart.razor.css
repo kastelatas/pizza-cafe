@@ -1,0 +1,68 @@
+.sticky-top {
+    width: 350px;
+    position: fixed;
+    top: 20px;
+    right: -360px;
+    z-index: 1020;
+}
+
+.active-card {
+    right: 20px;
+}
+
+.card {
+    position: relative;
+    /*right: -1000px;*/
+}
+
+.card .list-group-item span:nth-child(1) {
+    max-width: 150px;
+    width: 150px;
+}
+
+.open-cart {
+    position: relative;
+    right: 90px;
+    cursor: pointer;
+}
+
+.active-card > .open-cart {
+    display: none;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header i {
+    margin-right: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+.list-group {
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 400px;
+}
+
+@media (max-width: 992px) {
+    .sticky-top .open-cart{
+        top: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .sticky-top {
+        width: 100%;
+    }
+
+    .active-card {
+        right: 0;
+    }
+}

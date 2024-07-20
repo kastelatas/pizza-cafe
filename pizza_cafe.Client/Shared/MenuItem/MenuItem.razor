@@ -1,0 +1,55 @@
+@using pizza_cafe.Shared.Models
+@inject NavigationManager NavigationManager
+
+<div class="card col-md-5 col-sm-12 m-2 card m-2 d-flex flex-row-reverse">
+    <div class="circle-image">
+        <img src="@NavigationManager.BaseUri/@DishItem.Image"
+             class="card-img-top" alt="Product Image">
+    </div>
+    <div class="card-body w-">
+        <h5 class="card-title fw-bold">@DishItem.Name</h5>
+        <p class="card-text fw-bold">@DishItem.Price.ToString() грн</p>
+        <p class="card-text">@DishItem.Description</p>
+        <p class="card-text fw-bold">
+            @if (DishItem.Weight == 0)
+            {
+                @DishItem.Count
+                <span>шт</span>
+            }
+            else
+            {
+                @DishItem.Weight
+                <span>гр</span>
+            }
+        </p>
+        <div class="d-flex align-items-center w-50">
+            <button class="btn btn-outline-secondary btn-sm" @onclick="DecrementQuantity">-</button>
+            <input type="number" id="quantity" class="form-control quantity-input mx-2" @bind="_dishCount" min="1">
+            <button class="btn btn-outline-secondary btn-sm" @onclick="IncrementQuantity">+</button>
+        </div>
+        <button class="btn btn-outline-dark mt-3" @onclick="() => AddToCart.Invoke(DishItem, _dishCount)">Додати</button>
+    </div>
+</div>
+
+@code {
+
+    [Parameter] public Dish DishItem { get; set; }
+    [Parameter] public Action<Dish, int> AddToCart { get; set; }
+
+
+    private int _dishCount = 1;
+
+    private void DecrementQuantity()
+    {
+        if (_dishCount > 1)
+        {
+            _dishCount--;
+        }
+    }
+
+    private void IncrementQuantity()
+    {
+        _dishCount++;
+    }
+
+}

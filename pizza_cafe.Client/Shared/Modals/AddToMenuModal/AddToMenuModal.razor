@@ -1,0 +1,35 @@
+<Modal>
+    <TitleContent>
+        Добавить блюдо
+    </TitleContent>
+    <ChildContent>
+        <form>
+            <div class="mb-3">
+                <label for="nameOfDish" class="form-label">Название</label>
+                <input type="text" class="form-control" id="nameOfDish" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="descriptionOfDish" class="form-label">Описание</label>
+                <textarea  class="form-control" id="descriptionOfDish" />
+            </div>
+            <div class="mb-3">
+                <label for="priceOfDish" class="form-label">Цена</label>
+                <input class="form-control" id="priceOfDish"/>
+            </div>
+            <div class="mb-3">
+                <label for="weightOfDish" class="form-label">Вес</label>
+                <input class="form-control" id="weightOfDish"/>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Сохранить</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </form>
+    </ChildContent>
+</Modal>
+
+@code
+{
+
+}

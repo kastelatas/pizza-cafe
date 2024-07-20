@@ -1,0 +1,126 @@
+﻿@page "/"
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+@using Fluxor
+@using pizza_cafe.Shared.Models
+@using pizza_cafe.Client.Store.Cart
+@using pizza_cafe.Client.Store.Menu
+@using pizza_cafe.Client.Shared.MenuItem
+@using pizza_cafe.Client.Shared.Cart
+
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Головна</PageTitle>
+
+<div class="home-page">
+    <div class="col-12">
+        <br>
+        <ul class="list-group list-group-horizontal justify-content-between bg-white  sticky-top">
+
+        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-between">
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Піца", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Піца</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Перші страви", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Перші страви</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Другі страви", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Другі страви</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Салати та закуски", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Салати та закуски</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Хот Доги", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item  list-group-item cursor-pointer border-0 ">Хот Доги</li>
+                    </NavLink>
+                </ul>
+            </div>
+        </nav>
+        <hr class="border border-dark border-1 opacity-50">
+        <h1 class="main-title text-center text-uppercase">Меню</h1>
+        <hr class="border border-dark border-1 opacity-50">
+        <div class="d-flex flex-column">
+            @if (MenuState.Value.Menu.Count == 0)
+            {
+                <p>Немає страв</p>
+            }
+            else
+            {
+                @foreach (var item in MenuState.Value.Menu.SelectMany(category => category))
+                {
+                    <br/>
+                    <p class="letter-spacing-4 text-center text-uppercase fs-4" id="@item.Key">@item.Key</p>
+                    <br/>
+                    <div class="menu-list__wrapper d-flex justify-content-center">
+                        <div class="d-flex flex-wrap flex-row justify-content-between">
+                            @foreach (var dish in item.Value)
+                            {
+                                <MenuItem DishItem="@dish" AddToCart="AddToCart"/>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <Cart ShowCard="ShowCard" SetShowCard="SetShowCard" CartList="CartState.Value.Cart" RemoveFromCart="RemoveFromCart"/>
+    </div>
+</div>
+
+@code {
+    [Inject] private IState<CartState> CartState { get; set; }
+    [Inject] private IState<MenuState> MenuState { get; set; }
+
+    [Inject] public IDispatcher Dispatcher { get; set; }
+
+    public bool ShowCard;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Dispatcher.Dispatch(new MenuAction.FetchDataAction());
+    }
+
+    public void AddToCart(Dish dish, int count)
+    {
+        Dispatcher.Dispatch(new CartAction.AddToCartAction(dish, count));
+
+        StateHasChanged();
+    }
+
+    public void RemoveFromCart(CartItem cartItem)
+    {
+        Dispatcher.Dispatch(new CartAction.RemoveFromCartAction(cartItem));
+
+        StateHasChanged();
+    }
+
+    public void SetShowCard(bool flag)
+    {
+        ShowCard = flag;
+
+        StateHasChanged();
+    }
+
+}

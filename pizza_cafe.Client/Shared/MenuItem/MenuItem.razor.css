@@ -1,0 +1,31 @@
+.circle-image {
+    min-width: 200px;
+    width: 200px; /* Задайте желаемую ширину */
+    height: 200px; /* Задайте желаемую высоту */
+    border-radius: 50%; /* Делаем края круга */
+    overflow: hidden; /* Скрываем излишки изображения */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабируем изображение, чтобы оно покрыло круг полностью */
+}
+
+.card {
+    border: none;
+    background: transparent;
+}
+
+@media (max-width: 1025px) {
+    .card {
+        flex-direction: column !important;
+    }
+    
+    .card .circle-image {
+        margin: 0 auto;
+    }
+}

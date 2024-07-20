@@ -1,0 +1,492 @@
+[
+    {
+        "id": 1,
+        "name": "Солянка збірна",
+        "image": "/image/Солянка збірна.jpg",
+        "description": "Свинні копчені ребра, м'ясо свинини, ковбаса салямі, солоні огірки, томатна паста, цибуля, морква, картопля, спеції",
+        "price": 65,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 2,
+        "name": "Зелений борщ",
+        "image": "/image/Зелений борщ.png",
+        "description": "Щавель, яйце, картопля, морква, цибуля, курячий бульйон, зелень",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 3,
+        "name": "Червоний борщ",
+        "image": "/image/Червоний борщ.jpg",
+        "description": "Буряк, капуста, картопля, морква, цибуля, томатна паста, м'ясо свинини",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 4,
+        "name": "Суп з фрикадельками",
+        "image": "image/Суп з фрикадельками.jpg",
+        "description": "Свині фрикадельки, картопля, морква, цибуля, зелень, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 5,
+        "name": "Гороховий суп",
+        "image": "image/Гороховий суп.jpg",
+        "description": "Горох, м'ясо свинини, картопля, морква, цибуля, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 6,
+        "name": "Вершковий грибний суп",
+        "image": "image/Вершковий грибний суп.jpg",
+        "description": "Печериці, плавлений сир, картопля, морква, цибуля, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 7,
+        "name": "Харчо",
+        "image": "image/Харчо.jpg",
+        "description": "М'ясо свинини, рис, картопля, томати, цибуля, часник, зелень, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 8,
+        "name": "Гречаний грибний суп",
+        "image": "image/Гречаний грибний суп.jpg",
+        "description": "Гречка, печериці, картопля, морква, цибуля, зелень, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 9,
+        "name": "Уха",
+        "image": "image/Уха.jpg",
+        "description": "Сьомга, картопля, морква, цибуля, помідори, часник, зелень, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 10,
+        "name": "Окрошка",
+        "image": "image/Окрошка.jpg",
+        "description": "Варена ковбаса, яйце, зелень, огірок, кефір, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 1
+    },
+    {
+        "id": 11,
+        "name": "Макарони по-флотськи",
+        "image": "image/Макарони по-флотськи.jpg",
+        "description": "Макарони, фарш, цибуля, спеції",
+        "price": 50,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 12,
+        "name": "Печеня",
+        "image": "image/Печеня.jpg",
+        "description": "Картопля, м'ясо свинини, морква, цибуля, томатна паста, спеції",
+        "price": 25,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 13,
+        "name": "Гречка",
+        "image": "image/Гречка.jpg",
+        "description": "Гречка, масло, сіль",
+        "price": 25,
+        "weight": 300,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 14,
+        "name": "Пшенична каша",
+        "image": "image/Пшенична каша.jpg",
+        "description": "Пшенична крупа, масло, сіль",
+        "price": 25,
+        "weight": 450,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 15,
+        "name": "Пюре",
+        "image": "image/Пюре.jpg",
+        "description": "Картопля, масло, сіль",
+        "price": 35,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 16,
+        "name": "Молода картопля з кропом",
+        "image": "image/Молода картопля з кропом.jpg",
+        "description": "Молода картопля, кріп, масло, сіль",
+        "price": 45,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 17,
+        "name": "Купати в томатному соусі",
+        "image": "image/Купати в томатному соусі.jpg",
+        "description": "Купати, томатний соус, цибуля, спеції",
+        "price": 65,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 2
+    },
+    {
+        "id": 18,
+        "name": "Голубці з капустяним листом",
+        "image": "image/Голубці з капустяним листом.jpg",
+        "description": "Капуста, фарш, рис, морква, цибуля, томатний соус, спеції",
+        "price": 60,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 19,
+        "name": "Котлети",
+        "image": "image/Котлети.jpg",
+        "description": "Фарш, цибуля, яйце, хліб, спеції",
+        "price": 25,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 2
+    },
+    {
+        "id": 20,
+        "name": "Холодець",
+        "image": "image/Холодець.jpg",
+        "description": "М'ясо свинини, цибуля, часник, спеції",
+        "price": 50,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 21,
+        "name": "Плов",
+        "image": "image/Плов.jpg",
+        "description": "Рис, м'ясо свинини, морква, цибуля, спеції",
+        "price": 50,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 22,
+        "name": "Картопля в горщику",
+        "image": "image/Картопля в горщику.jpg",
+        "description": "Картопля, м'ясо свинини, морква, цибуля, спеції",
+        "price": 65,
+        "weight": 500,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 23,
+        "name": "Відбивна смажена",
+        "image": "image/Відбивна смажена.jpg",
+        "description": "М’ясо свинини, борошно, яйце, спеції",
+        "price": 35,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 2
+    },
+    {
+        "id": 24,
+        "name": "Рис з овочами",
+        "image": "image/Рис з овочами.jpg",
+        "description": "Рис, овочі, спеції",
+        "price": 50,
+        "weight": 350,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 25,
+        "name": "М'ясо запечене",
+        "image": "image/М`ясо запечене.jpg",
+        "description": "М’ясо свинини, спеції",
+        "price": 75,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 26,
+        "name": "Ребра свинячі",
+        "image": "image/Ребра свинячі.jpg",
+        "description": "Свинячі ребра, спеції",
+        "price": 65,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 27,
+        "name": "Шашлик свинячий порція",
+        "image": "image/Шашлик свинячий порція.jpg",
+        "description": "М’ясо свинини, цибуля, спеції",
+        "price": 117,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 28,
+        "name": "Шашлик курячий порція",
+        "image": "image/Шашлик курячий порція.jpg",
+        "description": "М’ясо курки, цибуля, спеції",
+        "price": 50,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 29,
+        "name": "Хек смажений",
+        "image": "image/Хек смажений.jpg",
+        "description": "Хек, спеціЇ",
+        "price": 80,
+        "weight": 200,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 30,
+        "name": "Мойва смажена",
+        "image": "image/Мойва смажена.jpg",
+        "description": "Мойва, спеції",
+        "price": 50,
+        "weight": 0,
+        "count": 10,
+        "typeOfDish": 2
+    },
+    {
+        "id": 31,
+        "name": "Пангасіус смажений",
+        "image": "image/Пангасіус смажений.jpg",
+        "description": "М’ясо свинини, борошно, яйце, спеції",
+        "price": 120,
+        "weight": 200,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 32,
+        "name": "Закуска оригінальна",
+        "image": "image/Закуска оригінальна.jpg",
+        "description": "Плавлений сирок, варене яйце, часник, майонез",
+        "price": 40,
+        "weight": 100,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 33,
+        "name": "Оселедець",
+        "image": "image/Оселедець.jpg",
+        "description": "Оселедець, цибуля, олія",
+        "price": 55,
+        "weight": 70,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 34,
+        "name": "Оселедець під шубою",
+        "image": "image/Оселедець під шубою.jpg",
+        "description": "Оселедець, буряк, картопля, морква, лук, майонез",
+        "price": 55,
+        "weight": 350,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 35,
+        "name": "Салат весняний",
+        "image": "image/Салат весняний.jpg",
+        "description": "Морква, капуста, зелень",
+        "price": 15,
+        "weight": 150,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 36,
+        "name": "Олів’є",
+        "image": "image/Олів`є.jpg",
+        "description": "Картопля, морква, горошок, яйце, ковбаса, майонез, цибуля, солоний огірок",
+        "price": 45,
+        "weight": 230,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 37,
+        "name": "Салат овочевий",
+        "image": "image/Салат овочевий.jpg",
+        "description": "Огірки, помідори, капуста, зелень, олія",
+        "price": 30,
+        "weight": 150,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 38,
+        "name": "Салат крабовий",
+        "image": "image/Салат крабовий.jpg",
+        "description": "Крабові палички, кукурудза, яйце, капуста, майонез",
+        "price": 50,
+        "weight": 230,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 39,
+        "name": "Салат по-грецьки",
+        "image": "image/Салат по-грецьки.jpg",
+        "description": "Помідори, огірки, маслини, сир фета, зелень, олія",
+        "price": 100,
+        "weight": 350,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 40,
+        "name": "Вінегрет",
+        "image": "image/Вінегрет.jpg",
+        "description": "Буряк, картопля, морква, горошок, кислі огірки, олія",
+        "price": 35,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 41,
+        "name": "Мімоза",
+        "image": "image/Мімоза.jpg",
+        "description": "Риба консервована, яйце, картопля, морква, майонез",
+        "price": 45,
+        "weight": 350,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 42,
+        "name": "М’ясний салат",
+        "image": "image/М`ясний салат.jpg",
+        "description": "Серця, горошок, лук, олія, спеції",
+        "price": 45,
+        "weight": 200,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 43,
+        "name": "Морква по-корейські",
+        "image": "image/Морква по-корейски.jpg",
+        "description": "Морква, спеції, оцет, олія",
+        "price": 30,
+        "weight": 150,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 44,
+        "name": "Ікра баклажанна",
+        "image": "image/Ікра баклажанна.jpg",
+        "description": "Баклажани, помідори, перець, цибуля, олія",
+        "price": 40,
+        "weight": 200,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 45,
+        "name": "Оладки",
+        "image": "image/Оладки.jpg",
+        "description": "Борошно, яйце, кефір, цукор, олія",
+        "price": 5,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 3
+    },
+    {
+        "id": 46,
+        "name": "Сирники",
+        "image": "image/Сирники.jpg",
+        "description": "Сир, яйце, борошно, цукор, олія",
+        "price": 25,
+        "weight": 0,
+        "count": 3,
+        "typeOfDish": 3
+    },
+    {
+        "id": 47,
+        "name": "Яєчня",
+        "image": "image/Яєчня.jpg",
+        "description": "Яйце, спеції",
+        "price": 10,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 3
+    },
+    {
+        "id": 48,
+        "name": "Хот-дог молочний",
+        "image": "image/Хот-дог молочний.jpg",
+        "description": "Молочна сосиска, булочка, кетчуп, майонез, гірчиця",
+        "price": 45,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 4
+    },
+    {
+        "id": 49,
+        "name": "Хот-дог баварський",
+        "image": "image/Хот-дог баварський.jpg",
+        "description": "Баварська сосиска, булочка, кетчуп, майонез, гірчиця",
+        "price": 60,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 4
+    }
+]
