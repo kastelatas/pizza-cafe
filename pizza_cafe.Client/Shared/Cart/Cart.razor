@@ -64,7 +64,10 @@
 
     private async void SaveToFile()
     {
-        await WordTableServiceInstance.GenerateWord(CartList, "Menu");
+        var result = await WordTableServiceInstance.GenerateWord(CartList, "Menu");
+        if (result)
+        {
+        }
         // await WordTableServiceInstance.Init();
     }
 

@@ -25,7 +25,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav justify-content-between">
-                  
                     <NavLink
                         @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Перші страви", forceLoad: true))"
                         href="javascript:void(0)"
@@ -57,10 +56,10 @@
                         <li class=" nav-item list-group-item cursor-pointer border-0 ">Піца</li>
                     </NavLink>
                     <NavLink
-                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Добавки", forceLoad: true))"
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Закуски у фритюрі", forceLoad: true))"
                         href="javascript:void(0)"
                         Match="@NavLinkMatch.Prefix">
-                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Добавки</li>
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Закуски у фритюрі</li>
                     </NavLink>
                 </ul>
             </div>
@@ -128,6 +127,19 @@
         ShowCard = flag;
 
         StateHasChanged();
+    }
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var _isContentLoaded =  await JSRuntime.InvokeAsync<bool>("checkIfContentLoaded");
+
+            if (_isContentLoaded)
+            {
+                JSRuntime.InvokeVoidAsync("hideMenuBarMob");
+            }
+        }
     }
 
 }

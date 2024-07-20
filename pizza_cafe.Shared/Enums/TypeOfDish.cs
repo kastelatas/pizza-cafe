@@ -26,7 +26,7 @@ public static class TypeOfDishExtensions
             case TypeOfDish.HotDog:
                 return "Хот Доги";
             case TypeOfDish.Supplements:
-                return "Добавки";
+                return "Закуски у фритюрі";
             case TypeOfDish.Drink:
                 return "Напої";
             case TypeOfDish.Pizza:
