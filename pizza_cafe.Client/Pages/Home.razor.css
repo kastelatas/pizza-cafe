@@ -29,8 +29,83 @@
     background: #fff;
 }
 
+.banner {
+    display: none;
+}
+
+.banner .btn-close {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    z-index: 1022;
+    color: #fff;
+}
+
+.banner .banner-image__overlay .btn-close:focus {
+    box-shadow: none !important;
+}
+
+.banner-show {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner .banner-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1021;
+}
+
+.banner .banner-image__overlay {
+    position: relative;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    z-index: 1024;
+    top: 50%;
+    left: 50%;
+}
+
+
+.banner .banner-image {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1441px) {
+    .banner .banner-image {
+        width: 450px;
+    }
+}
+
 @media (max-width: 1025px) {
     .main-title {
         font-size: 60px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner .banner-image {
+        width: 350px;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner .btn-close {
+        right: 0;
+    }
+}
+
+@media (max-width: 374px) {
+    .banner .banner-image {
+        width: 300px;
     }
 }

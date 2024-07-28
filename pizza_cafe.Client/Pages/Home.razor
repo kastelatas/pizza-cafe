@@ -16,9 +16,13 @@
 <div class="home-page">
     <div class="col-12">
         <br>
-        <ul class="list-group list-group-horizontal justify-content-between bg-white  sticky-top">
-
-        </ul>
+        <div class="banner @(_isBannerShow ? "banner-show" : "")">
+            <div class="banner-overlay" @onclick="CloseBanner"></div>
+            <div class="banner-image__overlay">
+                <button class="btn btn-close btn-close-white" @onclick="CloseBanner"></button>
+                <img class="banner-image" src="image/Banner.png">
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -100,7 +104,16 @@
 
     [Inject] public IDispatcher Dispatcher { get; set; }
 
+    private bool _isBannerShow = true;
+
     public bool ShowCard;
+
+    private void CloseBanner()
+    {
+        _isBannerShow = false;
+        Console.WriteLine($"_isBanner - {_isBannerShow}");
+        StateHasChanged();
+    }
 
     protected override void OnInitialized()
     {
@@ -128,12 +141,12 @@
 
         StateHasChanged();
     }
-    
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            var _isContentLoaded =  await JSRuntime.InvokeAsync<bool>("checkIfContentLoaded");
+            var _isContentLoaded = await JSRuntime.InvokeAsync<bool>("checkIfContentLoaded");
 
             if (_isContentLoaded)
             {

@@ -111,3 +111,8 @@ code {
     cursor: pointer;
 }
 
+
+body:has(.banner-show) {
+    overflow: hidden;
+}
+
