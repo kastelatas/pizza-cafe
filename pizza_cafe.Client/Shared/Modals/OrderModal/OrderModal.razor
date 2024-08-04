@@ -1,0 +1,76 @@
+﻿@using System.ComponentModel.DataAnnotations
+
+<Modal ShowModal="false">
+    <TitleContent>
+       Заказ
+    </TitleContent>
+    <ChildContent>
+        <EditForm Model="@orderModel" OnValidSubmit="@HandleValidSubmit">
+            <DataAnnotationsValidator />
+            @* <ValidationSummary /> *@
+
+            <div class="form-group">
+                <label for="firstName">Имя</label>
+                <InputText id="firstName" class="form-control" @bind-Value="orderModel.FirstName" placeholder="Введите ваше имя" />
+                <ValidationMessage For="@(() => orderModel.FirstName)" />
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Фамилия</label>
+                <InputText id="lastName" class="form-control" @bind-Value="orderModel.LastName" placeholder="Введите вашу фамилию" />
+                <ValidationMessage For="@(() => orderModel.LastName)" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <InputText id="email" type="email" class="form-control" @bind-Value="orderModel.Email" placeholder="Введите ваш эмейл" />
+                <ValidationMessage For="@(() => orderModel.Email)" />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <InputText id="phone" type="tel" class="form-control" @bind-Value="orderModel.Phone" placeholder="Введите ваш номер телефона" />
+                <ValidationMessage For="@(() => orderModel.Phone)" />
+            </div>
+
+            <div class="form-group">
+                <label for="numPeople">Количество человек</label>
+                <InputNumber id="numPeople" class="form-control" @bind-Value="orderModel.NumPeople" placeholder="Введите количество человек" />
+                <ValidationMessage For="@(() => orderModel.NumPeople)" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </EditForm>
+    </ChildContent>
+</Modal>
+
+
+@code {
+    private OrderModel orderModel = new OrderModel();
+
+    private void HandleValidSubmit()
+    {
+        // Логика обработки успешной отправки формы
+        Console.WriteLine("Форма успешно отправлена!");
+    }
+
+    public class OrderModel
+    {
+        [Required(ErrorMessage = "Имя обязательно")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Фамилия обязательна")]
+        public string LastName { get; set; }
+
+        [EmailAddress(ErrorMessage = "Неправильный формат электронной почты")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Номер телефона обязателен")]
+        [Phone(ErrorMessage = "Неправильный формат номера телефона")]
+        public string Phone { get; set; }
+
+        [Required(ErrorMessage = "Количество человек обязательно")]
+        [Range(1, int.MaxValue, ErrorMessage = "Количество человек должно быть больше 0")]
+        public int NumPeople { get; set; }
+    }
+}

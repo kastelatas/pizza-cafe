@@ -51,6 +51,17 @@
     max-height: 400px;
 }
 
+ .list-group-item input.number-input {
+    max-width: 41px !important;
+    text-align: center !important;
+}
+
+.list-group-item input.number-input[type="number"]::-webkit-outer-spin-button,
+.list-group-item input.number-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
 @media (max-width: 992px) {
     .sticky-top .open-cart{
         top: 12px;

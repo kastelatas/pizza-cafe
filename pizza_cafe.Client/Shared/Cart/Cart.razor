@@ -36,7 +36,8 @@
                         {
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span>@item.Dish.Name</span>
-                                <span>@item.Count x @item.Dish.Price грн</span>
+                                <InputNumber TValue="int" class="number-input" @bind-Value="@item.Count" />
+                                <span>@item.Dish.Price ₴</span>
                                 <span class="delete-btn" @onclick="() => RemoveFromCart.Invoke(item)">
                                     <i class="bi bi-trash"></i>
                                 </span>
@@ -64,11 +65,7 @@
 
     private async void SaveToFile()
     {
-        var result = await WordTableServiceInstance.GenerateWord(CartList, "Menu");
-        if (result)
-        {
-        }
-        // await WordTableServiceInstance.Init();
+        await WordTableServiceInstance.GenerateWord(CartList, "Menu");
     }
 
 }
