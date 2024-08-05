@@ -1,3 +1,4 @@
+@using pizza_cafe.Shared.Enums
 @using pizza_cafe.Shared.Models
 @inject NavigationManager NavigationManager
 
@@ -14,12 +15,20 @@
             @if (DishItem.Weight == 0)
             {
                 @DishItem.Count
-                <span>шт</span>
+                <span> шт</span>
             }
             else
             {
-                @DishItem.Weight
-                <span>гр</span>
+               @if (@DishItem.TypeOfDish == TypeOfDish.Drink)
+               {
+                   @DishItem.Weight
+                   <span> мл</span>
+               }
+               else
+               {
+                   @DishItem.Weight
+                   <span> гр</span>
+               }
             }
         </p>
         <div class="d-flex align-items-center w-50">

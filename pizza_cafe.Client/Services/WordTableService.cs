@@ -8,7 +8,7 @@ namespace pizza_cafe.Client.Services;
 public class WordTableService(HttpClient httpClient, IJSRuntime jsRuntime)
 {
     private const string Url = "https://api.pizza-cafe.store";
-    // private const string Url = "http://localhost:5000";
+    //private const string Url = "http://localhost:5000";
     private const string GEMERATE_WORD_URI = "api/Word/Generate";
     public async Task<bool> GenerateWord(Cart cart, string fileName)
     {

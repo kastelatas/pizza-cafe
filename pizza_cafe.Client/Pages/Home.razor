@@ -1,12 +1,9 @@
 ﻿@page "/"
 @inherits Fluxor.Blazor.Web.Components.FluxorComponent
 
-@using Fluxor
 @using pizza_cafe.Shared.Models
 @using pizza_cafe.Client.Store.Cart
 @using pizza_cafe.Client.Store.Menu
-@using pizza_cafe.Client.Shared.MenuItem
-@using pizza_cafe.Client.Shared.Cart
 
 @inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
@@ -64,6 +61,12 @@
                         href="javascript:void(0)"
                         Match="@NavLinkMatch.Prefix">
                         <li class=" nav-item list-group-item cursor-pointer border-0 ">Закуски у фритюрі</li>
+                    </NavLink>
+                    <NavLink
+                        @onclick="@(() => NavigationManager.NavigateTo(NavigationManager.BaseUri + "#Напої", forceLoad: true))"
+                        href="javascript:void(0)"
+                        Match="@NavLinkMatch.Prefix">
+                        <li class=" nav-item list-group-item cursor-pointer border-0 ">Напої</li>
                     </NavLink>
                 </ul>
             </div>

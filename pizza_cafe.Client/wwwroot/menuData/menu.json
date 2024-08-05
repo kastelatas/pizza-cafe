@@ -13,7 +13,7 @@
         "id": 2,
         "name": "Зелений борщ",
         "image": "/image/Зелений борщ.png",
-        "description": "Щавель, яйце, картопля, морква, цибуля, курячий бульйон, зелень",
+        "description": "М’ясний бульйон, м'ясо свинини, щавель, яйце, картопля, морква, цибуля, зелень",
         "price": 50,
         "weight": 500,
         "count": 0,
@@ -53,7 +53,7 @@
         "id": 6,
         "name": "Вершковий грибний суп",
         "image": "image/Вершковий грибний суп.jpg",
-        "description": "Печериці, плавлений сир, картопля, морква, цибуля, спеції",
+        "description": "Печериці, плавлений сир, картопля, морква, цибуля, вершкове масло, спеції",
         "price": 50,
         "weight": 500,
         "count": 0,
@@ -73,7 +73,7 @@
         "id": 8,
         "name": "Гречаний грибний суп",
         "image": "image/Гречаний грибний суп.jpg",
-        "description": "Гречка, печериці, картопля, морква, цибуля, зелень, спеції",
+        "description": "М'ясо свинини, гречка, печериці, картопля, морква, цибуля, зелень, спеції",
         "price": 50,
         "weight": 500,
         "count": 0,
@@ -111,10 +111,10 @@
     },
     {
         "id": 12,
-        "name": "Печеня",
+        "name": "Жарке",
         "image": "image/Печеня.jpg",
         "description": "Картопля, м'ясо свинини, морква, цибуля, томатна паста, спеції",
-        "price": 25,
+        "price": 65,
         "weight": 400,
         "count": 0,
         "typeOfDish": 2
@@ -164,7 +164,7 @@
         "name": "Купати в томатному соусі",
         "image": "image/Купати в томатному соусі.jpg",
         "description": "Купати, томатний соус, цибуля, спеції",
-        "price": 65,
+        "price": 26,
         "weight": 0,
         "count": 1,
         "typeOfDish": 2
@@ -204,7 +204,7 @@
         "name": "Плов",
         "image": "image/Плов.jpg",
         "description": "Рис, м'ясо свинини, морква, цибуля, спеції",
-        "price": 50,
+        "price": 65,
         "weight": 400,
         "count": 0,
         "typeOfDish": 2
@@ -244,7 +244,7 @@
         "name": "М'ясо запечене",
         "image": "image/М`ясо запечене.jpg",
         "description": "М’ясо свинини, спеції",
-        "price": 75,
+        "price": 120,
         "weight": 250,
         "count": 0,
         "typeOfDish": 2
@@ -254,7 +254,7 @@
         "name": "Ребра свинячі",
         "image": "image/Ребра свинячі.jpg",
         "description": "Свинячі ребра, спеції",
-        "price": 65,
+        "price": 120,
         "weight": 250,
         "count": 0,
         "typeOfDish": 2
@@ -264,7 +264,7 @@
         "name": "Шашлик свинячий порція",
         "image": "image/Шашлик свинячий порція.jpg",
         "description": "М’ясо свинини, цибуля, спеції",
-        "price": 117,
+        "price": 120,
         "weight": 250,
         "count": 0,
         "typeOfDish": 2
@@ -274,7 +274,7 @@
         "name": "Шашлик курячий порція",
         "image": "image/Шашлик курячий порція.jpg",
         "description": "М’ясо курки, цибуля, спеції",
-        "price": 50,
+        "price": 120,
         "weight": 250,
         "count": 0,
         "typeOfDish": 2
@@ -303,7 +303,7 @@
         "id": 31,
         "name": "Пангасіус смажений",
         "image": "image/Пангасіус смажений.jpg",
-        "description": "М’ясо свинини, борошно, яйце, спеції",
+        "description": "Пангасіус, спеції",
         "price": 120,
         "weight": 200,
         "count": 0,
@@ -394,7 +394,7 @@
         "name": "Вінегрет",
         "image": "image/Вінегрет.jpg",
         "description": "Буряк, картопля, морква, горошок, кислі огірки, олія",
-        "price": 35,
+        "price": 45,
         "weight": 250,
         "count": 0,
         "typeOfDish": 3
@@ -434,7 +434,7 @@
         "name": "Ікра баклажанна",
         "image": "image/Ікра баклажанна.jpg",
         "description": "Баклажани, помідори, перець, цибуля, олія",
-        "price": 40,
+        "price": 60,
         "weight": 200,
         "count": 0,
         "typeOfDish": 3
@@ -608,5 +608,115 @@
         "weight": 0,
         "count": 12,
         "typeOfDish": 5
+    },
+    {
+        "id": 62,
+        "name": "Смажений баклажан",
+        "image": "image/Смажений баклажан.jpg",
+        "description": "Баклажан, часник, олія, лимонний сік, зелень",
+        "price": 20,
+        "weight": 150,
+        "count": 0,
+        "typeOfDish": 3
+    },
+    {
+        "id": 63,
+        "name": "Овочеве рагу зі свининою",
+        "image": "image/Овочеве рагу зі свининою.jpg",
+        "description": "М'ясо свинини, болгарський перець, цибуля, морква, сезонні овочі, помідор, томатна паста, зелень, спеції",
+        "price": 55,
+        "weight": 400,
+        "count": 0,
+        "typeOfDish": 2
+    },
+    {
+        "id": 64,
+        "name": "Млинці з сиром та родзинками",
+        "image": "image/Млинці з сиром та родзинками.jpeg",
+        "description": "Борошно, яйце, молоко, цукор, сир, родзинки",
+        "price": 15,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 3
+    },
+    {
+        "id": 65,
+        "name": "Млинці з м'ясом",
+        "image": "image/Млинці з м'ясом.jpg",
+        "description": "Борошно, яйце, молоко, м'ясо свинини, цибуля, олія, спеції",
+        "price": 15,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 3
+    },
+    {
+        "id": 66,
+        "name": "Млинці з куркою та грибами",
+        "image": "image/Млинці з куркою та грибами.jpg",
+        "description": "Борошно, яйце, молоко, м'ясо курки, гриби, цибуля, спеції",
+        "price": 15,
+        "weight": 0,
+        "count": 1,
+        "typeOfDish": 3
+    },
+    {
+        "id": 67,
+        "name": "Сік березовий",
+        "image": "image/Сік березовий.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
+    },
+    {
+        "id": 68,
+        "name": "Сік яблучний",
+        "image": "image/Сік яблучний.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
+    },
+    {
+        "id": 69,
+        "name": "Сік яблучно-виноградний",
+        "image": "image/Сік яблучно-виноградний.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
+    },
+    {
+        "id": 70,
+        "name": "Сік томатний",
+        "image": "image/Сік томатний.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
+    },
+    {
+        "id": 71,
+        "name": "Узвар",
+        "image": "image/Узвар.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
+    },
+    {
+        "id": 72,
+        "name": "Компот",
+        "image": "image/Компот.jpg",
+        "description": "",
+        "price": 15,
+        "weight": 250,
+        "count": 0,
+        "typeOfDish": 6
     }
 ]
