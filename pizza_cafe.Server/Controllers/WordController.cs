@@ -89,7 +89,7 @@ public class WordController(WordService wordService) : ControllerBase
                 // Adding a table to the document body
                 body.Append(table);
                 
-                body.Append(CreateParagraph($"Разом: {cart.Price} грн", true, "33", JustificationValues.Right));
+                body.Append(CreateParagraph($"Разом: {cart.Price.ToString()} грн", true, "33", JustificationValues.Right));
                 
                 mainPart.Document.Append(body);
             }

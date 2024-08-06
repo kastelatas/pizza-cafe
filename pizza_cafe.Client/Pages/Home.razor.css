@@ -96,16 +96,20 @@
     .banner .banner-image {
         width: 350px;
     }
-}
-
-@media (max-width: 540px) {
     .banner .btn-close {
         right: 0;
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 450px) {
     .banner .banner-image {
         width: 300px;
+    }
+   
+}
+
+@media (max-width: 374px) {
+    .banner .banner-image {
+        width: 270px;
     }
 }

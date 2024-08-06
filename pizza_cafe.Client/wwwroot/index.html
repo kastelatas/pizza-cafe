@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="icon" type="image/png" href="favicon.png"/>
+    <link href="manifest.webmanifest" rel="manifest" />
     <link href="pizza_cafe.Client.styles.css" rel="stylesheet"/>
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <script>
         function saveAsFile(fileName, bytesBase64) {
             var link = document.createElement('a');
@@ -53,6 +56,7 @@
     <a class="dismiss">🗙</a>
 </div>
 <script src="_framework/blazor.webassembly.js"></script>
+<script>navigator.serviceWorker.register('service-worker.js');</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -84,19 +88,19 @@
         });
     }
 
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-            for (let registration of registrations) {
-                registration.unregister();
-            }
-        });
-        caches.keys().then(function(names) {
-            for (let name of names) {
-                caches.delete(name);
-            }
-        });
-        window.location.reload(true);
-    }
+    // if ('serviceWorker' in navigator) {
+    //     navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    //         for (let registration of registrations) {
+    //             registration.unregister();
+    //         }
+    //     });
+    //     caches.keys().then(function(names) {
+    //         for (let name of names) {
+    //             caches.delete(name);
+    //         }
+    //     });
+    //     window.location.reload(true);
+    // }
 
 </script>
 </body>
