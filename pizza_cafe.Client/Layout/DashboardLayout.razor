@@ -1,0 +1,85 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Dashboard</PageTitle>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <NavLink
+                            class="nav-link"
+                            href="/dashboard"
+                            Match="@NavLinkMatch.Prefix">
+                            <i class="bi bi-house"></i>
+                            Головна
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink
+                            class="nav-link"
+                            href="/dashboard/menu"
+                            Match="@NavLinkMatch.Prefix">
+                            <i class="bi bi-bag"></i>
+                            Меню
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink
+                            class="nav-link"
+                            href="/dashboard/orderHistory"
+                            Match="@NavLinkMatch.Prefix">
+                            <i class="bi bi-archive"></i>
+                            Історія замовлень
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink
+                            class="nav-link"
+                            href="/dashboard/settings"
+                            Match="@NavLinkMatch.Prefix">
+                            <i class="bi bi-gear"></i>
+                            Налаштування
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink
+                            class="nav-link"
+                            href="/dashboard/settings"
+                            Match="@NavLinkMatch.Prefix">
+                            <i class="bi bi-emoji-frown"></i>
+                            Вихід
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard/menu">
+                            <i class="bi bi-people"></i>
+                            Меню
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard/settings">
+                            <i class="bi bi-gear"></i>
+                            Налаштування
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+           
+            @Body
+        </main>
+    </div>
+</div>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+}
